@@ -1,0 +1,13 @@
+.button {
+    -fx-background-radius: 5em;
+    -fx-min-width: 90px;
+    -fx-min-height: 90px;
+    -fx-max-width: 90px;
+    -fx-max-height: 90px;
+
+    -fx-background-color: linear-gradient(from 0% 93% to 0% 100%, #727171 0%, #727171 100%),
+    #7e7c7c,
+    #91fcf4,
+    radial-gradient(center 50% 50%, radius 100%, #91fcf4, #9b9d9e);
+    -fx-effect: dropshadow(gaussian, rgba(86, 86, 86, 0.75), 4, 0, 0, 1);
+}

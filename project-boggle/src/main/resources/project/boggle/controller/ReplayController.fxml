@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@css/fond.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.boggle.controller.ReplayController">
+   <Pane layoutX="71.0" layoutY="37.0" prefHeight="86.0" prefWidth="458.0">
+      <children>
+         <ImageView fitHeight="78.0" fitWidth="348.0" layoutX="55.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../png/timeover.png" />
+            </image>
+         </ImageView>
+      </children>
+   </Pane>
+   <Text fx:id="score" layoutX="113.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your score is : " textAlignment="CENTER" wrappingWidth="373.21630859375">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Text>
+   <ScrollPane layoutX="212.0" layoutY="290.0" prefHeight="250.0" prefWidth="179.0">
+      <content>
+         <Text fx:id="yourWords" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Words" textAlignment="CENTER" wrappingWidth="168.21630859375">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Text>
+      </content>
+   </ScrollPane>
+   <ScrollPane layoutX="24.0" layoutY="290.0" prefHeight="250.0" prefWidth="179.0">
+      <content>
+         <Text fx:id="allWords" strokeType="OUTSIDE" strokeWidth="0.0" text="allWords" textAlignment="CENTER" wrappingWidth="162.21630859375">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Text>
+      </content>
+   </ScrollPane>
+   <ScrollPane layoutX="401.0" layoutY="290.0" prefHeight="250.0" prefWidth="179.0">
+      <content>
+         <Text fx:id="masterWords" strokeType="OUTSIDE" strokeWidth="0.0" text="Master's Words" textAlignment="CENTER" wrappingWidth="168.21630859375">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Text>
+      </content>
+   </ScrollPane>
+   <Text layoutX="222.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your words" textAlignment="CENTER" wrappingWidth="154.21630859375">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Text>
+   <Text layoutX="36.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All words" textAlignment="CENTER" wrappingWidth="154.21630859375">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Text>
+   <Text layoutX="409.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Master's words" textAlignment="CENTER" wrappingWidth="154.21630859375">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Text>
+   <Pane layoutX="128.0" layoutY="563.0" prefHeight="128.0" prefWidth="348.0">
+      <children>
+         <Text layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do you want to play again ?" textAlignment="CENTER" wrappingWidth="307.9130859375">
+            <font>
+               <Font size="21.0" />
+            </font>
+         </Text>
+         <Button fx:id="ButtonYes" layoutX="33.0" layoutY="64.0" mnemonicParsing="false" onAction="#ButtonYes" prefHeight="54.0" prefWidth="126.0" stylesheets="@css/buttonUserConnection.css" text="YES" textFill="#100f10">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button layoutX="184.0" layoutY="64.0" mnemonicParsing="false" onAction="#ButtonNo" prefHeight="54.0" prefWidth="126.0" stylesheets="@css/buttonUserConnection.css" text="NO" textAlignment="RIGHT">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+      </children>
+   </Pane>
+   <Text fx:id="master" layoutX="155.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oops... you didn't beat the Master." textAlignment="CENTER" wrappingWidth="293.59912109375">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Text>
+   <Text fx:id="scoreMaster" layoutX="155.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Master's score : " textAlignment="CENTER" wrappingWidth="293.59912109375">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Text>
+</AnchorPane>

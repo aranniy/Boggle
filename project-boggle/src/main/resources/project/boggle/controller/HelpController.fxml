@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="600.0" style="-fx-background-color: white;" styleClass="bodybg" stylesheets="@css/fond.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.boggle.controller.HelpController">
+   <children>
+      <Label layoutX="14.0" layoutY="451.0" prefHeight="45.0" prefWidth="206.0" text="BONUS : " textFill="#834c80">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="597.0" prefHeight="34.0" prefWidth="418.0" text="Add Chrono (3 coins) : add 30 seconds to the timer.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="529.0" prefHeight="34.0" prefWidth="418.0" text="Vision (2 coins) : give a clue to a word not found yet.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="495.0" prefHeight="34.0" prefWidth="418.0" text="Rotation (2 coins) : shake the game board.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="631.0" prefHeight="34.0" prefWidth="418.0" text="Inspiration (4 coins) : indicate a word not found yet">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="563.0" prefHeight="34.0" prefWidth="418.0" text="Brasier (2 coins) : double points for the two next words.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="106.0" prefHeight="45.0" prefWidth="158.0" text="RULES :" textFill="#834c80">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="retour" layoutX="264.0" layoutY="685.0" mnemonicParsing="false" onAction="#retour" prefHeight="26.0" prefWidth="73.0" stylesheets="@css/buttonUserConnection.css" text="retour" />
+      <Label layoutX="12.0" layoutY="151.0" prefHeight="51.0" prefWidth="577.0" text="Find as many words as possible by forming contiguous chains of letters">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="192.0" prefHeight="34.0" prefWidth="561.0" text="The longer the word, the more points you'll gain !">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="226.0" prefHeight="34.0" prefWidth="445.0" text="You can move from one letter to the next located directly to the : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="294.0" prefHeight="34.0" prefWidth="584.0" text="A letter cannot be used more than once for the same word. ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="328.0" prefHeight="34.0" prefWidth="584.0" text="Only words of three or more letters count. Accents are not important.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="260.0" prefHeight="34.0" prefWidth="483.0" text="left, right, top, bottom, or on one of the four diagonal squares.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="363.0" prefHeight="45.0" prefWidth="183.0" text="POINTS :" textFill="#834c80">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="406.0" prefHeight="43.0" prefWidth="584.0" text="3/4 letters : 1 points      5 letters : 2 points      6 letters : 3 points       7 letters : 5 points      MORE : 11 points" />
+      <ImageView fitHeight="109.0" fitWidth="310.0" layoutX="140.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../png/help.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

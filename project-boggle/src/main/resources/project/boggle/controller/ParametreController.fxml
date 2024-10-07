@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="600.0" style="-fx-background-color: LAVENDER;" styleClass="bodybg" stylesheets="@css/fond.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.boggle.controller.ParametreController">
+    <Label layoutX="169.0" layoutY="270.0" prefHeight="40.0" prefWidth="248.0" text="LANGUAGE">
+        <font>
+          <Font size="28.0" />
+        </font>
+    </Label>
+    <Label layoutX="220.0" layoutY="384.0" prefHeight="40.0" prefWidth="131.0" text="TIME">
+        <font>
+          <Font size="28.0" />
+        </font>
+    </Label>
+    <Label layoutX="224.0" layoutY="162.0" prefHeight="40.0" prefWidth="144.0" text="LENGTH">
+        <font>
+          <Font size="28.0" />
+        </font>
+    </Label>
+    <Button fx:id="buttonSOLO" layoutX="241.0" layoutY="616.0" mnemonicParsing="false" onAction="#valider" prefHeight="59.0" prefWidth="119.0" stylesheets="@css/buttonUserConnection.css" text="Validate" />
+    <ButtonBar layoutX="156.0" layoutY="208.0" prefHeight="40.0" prefWidth="280.0">
+      <buttons>
+          <Button mnemonicParsing="false" onAction="#TailleQuatre" prefHeight="26.0" prefWidth="94.0" stylesheets="@css/buttonUserConnection.css" text="4x4" />
+          <Button mnemonicParsing="false" onAction="#TailleCinq" prefHeight="26.0" prefWidth="69.0" stylesheets="@css/buttonUserConnection.css" text="5x5" />
+          <Button mnemonicParsing="false" onAction="#TailleSix" prefHeight="26.0" prefWidth="69.0" stylesheets="@css/buttonUserConnection.css" text="6x6" />
+      </buttons>
+    </ButtonBar>
+    <ButtonBar layoutX="56.0" layoutY="432.0" prefHeight="40.0" prefWidth="367.0">
+      <buttons>
+          <Button mnemonicParsing="false" onAction="#TimerOne" prefHeight="26.0" prefWidth="69.0" stylesheets="@css/buttonUserConnection.css" text="1 min" />
+          <Button mnemonicParsing="false" onAction="#TimerTwo" prefHeight="26.0" prefWidth="69.0" stylesheets="@css/buttonUserConnection.css" text="2 min" />
+          <Button mnemonicParsing="false" onAction="#TimerThree" prefHeight="26.0" prefWidth="69.0" stylesheets="@css/buttonUserConnection.css" text="3 min" />
+          <Button mnemonicParsing="false" onAction="#TimerFour" prefHeight="26.0" prefWidth="69.0" stylesheets="@css/buttonUserConnection.css" text="4 min" />
+          <Button mnemonicParsing="false" onAction="#TimerFive" prefHeight="26.0" prefWidth="69.0" stylesheets="@css/buttonUserConnection.css" text="5 min" />
+          <Button mnemonicParsing="false" onAction="#TimerSix" prefHeight="26.0" prefWidth="69.0" stylesheets="@css/buttonUserConnection.css" text="6 min" />
+      </buttons>
+    </ButtonBar>
+    <ButtonBar layoutX="108.0" layoutY="323.0" prefHeight="40.0" prefWidth="385.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#langueESP" prefHeight="26.0" prefWidth="105.0" stylesheets="@css/buttonUserConnection.css" text="Spanish" />
+          <Button mnemonicParsing="false" onAction="#langueANG" prefHeight="26.0" prefWidth="69.0" stylesheets="@css/buttonUserConnection.css" text="English" />
+          <Button mnemonicParsing="false" onAction="#langueFR" prefHeight="26.0" prefWidth="69.0" stylesheets="@css/buttonUserConnection.css" text="French" />
+          <Button mnemonicParsing="false" onAction="#langueALL" prefHeight="26.0" prefWidth="69.0" stylesheets="@css/buttonUserConnection.css" text="German" />
+        </buttons>
+    </ButtonBar>
+    <Label fx:id="length" layoutX="336.0" layoutY="172.0" prefHeight="19.0" prefWidth="70.0" text="default: 4x4">
+        <font>
+          <Font size="12.0" />
+        </font>
+    </Label>
+    <Label fx:id="language" layoutX="336.0" layoutY="280.0" prefHeight="19.0" prefWidth="119.0" text="default: français">
+        <font>
+          <Font size="12.0" />
+        </font>
+    </Label>
+    <Label fx:id="time" layoutX="328.0" layoutY="395.0" prefHeight="19.0" prefWidth="108.0" text="default: 3 min">
+        <font>
+          <Font size="12.0" />
+        </font>
+    </Label>
+    <ButtonBar layoutX="160.0" layoutY="541.0" prefHeight="40.0" prefWidth="280.0">
+         <buttons>
+            <Button mnemonicParsing="false" onAction="#facile" prefHeight="26.0" prefWidth="94.0" stylesheets="@css/buttonUserConnection.css" text="Easy" />
+            <Button mnemonicParsing="false" onAction="#moyen" prefHeight="26.0" prefWidth="69.0" stylesheets="@css/buttonUserConnection.css" text="Medium" />
+            <Button mnemonicParsing="false" onAction="#difficile" prefHeight="26.0" prefWidth="126.0" stylesheets="@css/buttonUserConnection.css" text="Hard" />
+         </buttons>
+      </ButtonBar>
+    <ImageView fitHeight="149.0" fitWidth="458.0" layoutX="73.0" layoutY="70.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../../../png/parametres.png"/>
+    </ImageView>
+   <Label layoutX="217.0" layoutY="494.0" prefHeight="40.0" prefWidth="137.0" text="LEVEL">
+      <font>
+         <Font size="28.0" />
+      </font>
+   </Label>
+   <Label fx:id="level" layoutX="342.0" layoutY="505.0" prefHeight="19.0" prefWidth="108.0" text="default: facile">
+      <font>
+         <Font size="12.0" />
+      </font>
+   </Label>
+    <Button fx:id="back" layoutX="14.0" layoutY="646.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="87.0" stylesheets="@css/buttonUserConnection.css" text="Back" textAlignment="RIGHT">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Button>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="600.0" style="-fx-background-color: LAVENDER;" styleClass="bodybg" stylesheets="@css/fond.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.boggle.controller.UserConnectionController">
+   <TextField fx:id="username" layoutX="191.0" layoutY="286.0" prefHeight="40.0" prefWidth="220.0" />
+   <PasswordField fx:id="userPassword" layoutX="191.0" layoutY="401.0" onInputMethodTextChanged="#passwordDifficult" onKeyPressed="#passwordDifficult" onKeyReleased="#passwordDifficult" onKeyTyped="#passwordDifficult" prefHeight="40.0" prefWidth="234.0">
+      <tooltip>
+         <Tooltip fx:id="tooltip" />
+      </tooltip>
+   </PasswordField>
+   <Label layoutX="191.0" layoutY="254.0" prefHeight="32.0" prefWidth="74.0" text="Username" />
+   <Label layoutX="191.0" layoutY="369.0" prefHeight="32.0" prefWidth="74.0" text="Password " />
+   <Button layoutX="338.0" layoutY="490.0" mnemonicParsing="false" onAction="#validate" prefHeight="26.0" prefWidth="87.0" stylesheets="@css/buttonUserConnection.css" text="validate" />
+   <Pane fx:id="eye" layoutX="436.0" layoutY="408.0" onMousePressed="#changeEye" prefHeight="26.0" prefWidth="31.0" styleClass="eyeOpen" stylesheets="@css/eyePassword.css" />
+   <Label fx:id="wrong" layoutX="198.0" layoutY="200.0" opacity="0.0" prefHeight="40.0" prefWidth="204.0" text="Wrong Username or Password" textFill="#eb1d1d">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <Button layoutX="198.0" layoutY="490.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="26.0" prefWidth="87.0" stylesheets="@css/buttonUserConnection.css" text="new user" />
+   <ImageView fitHeight="163.0" fitWidth="315.0" layoutX="158.0" layoutY="96.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="@../../../png/boogle.png"/>
+   </ImageView>
+</AnchorPane>

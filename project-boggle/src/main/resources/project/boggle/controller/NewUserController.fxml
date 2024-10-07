@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="600.0" style="-fx-background-color: LAVENDER;" styleClass="bodybg" stylesheets="@css/fond.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.boggle.controller.NewUserController">
+    <Pane fx:id="eye" layoutX="436.0" layoutY="405.0" onMousePressed="#changeEye" prefHeight="33.0" prefWidth="43.0" styleClass="eyeOpen" stylesheets="@css/eyePassword.css" />
+    <TextField fx:id="mail" layoutX="183.0" layoutY="251.0" prefHeight="40.0" prefWidth="234.0" />
+    <TextField fx:id="username" layoutX="183.0" layoutY="323.0" prefHeight="40.0" prefWidth="234.0" />
+    <PasswordField fx:id="userPassword" layoutX="183.0" layoutY="401.0" onInputMethodTextChanged="#passwordDifficult" onKeyPressed="#passwordDifficult" onKeyReleased="#passwordDifficult" onKeyTyped="#passwordDifficult" prefHeight="40.0" prefWidth="234.0">
+        <tooltip>
+            <Tooltip fx:id="tooltip" />
+        </tooltip>
+    </PasswordField>
+    <Label layoutX="183.0" layoutY="291.0" prefHeight="32.0" prefWidth="74.0" text="Username" />
+    <Label layoutX="183.0" layoutY="369.0" prefHeight="32.0" prefWidth="74.0" text="Password " />
+    <Button layoutX="343.0" layoutY="479.0" mnemonicParsing="false" onAction="#validate" prefHeight="33.0" prefWidth="74.0" stylesheets="@css/buttonUserConnection.css" text="validate" />
+    <ProgressBar fx:id="progressBar" layoutX="190.0" layoutY="449.0" opacity="0.0" prefHeight="20.0" prefWidth="220.0" progress="0.0" />
+    <Button layoutX="183.0" layoutY="479.0" mnemonicParsing="false" onAction="#existingAccount" prefHeight="33.0" prefWidth="151.0" stylesheets="@css/buttonUserConnection.css" text="existing account">
+      <font>
+         <Font size="2.0" />
+      </font></Button>
+    <Label layoutX="183.0" layoutY="220.0" prefHeight="32.0" prefWidth="74.0" text="Email" />
+    <Label fx:id="wrong" layoutX="198.0" layoutY="180.0" opacity="0.0" prefHeight="40.0" prefWidth="204.0" text="Wrong Username or Password" textFill="#eb1d1d">
+        <font>
+        <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <ImageView fitHeight="163.0" fitWidth="315.0" layoutX="158.0" layoutY="96.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../../../png/boogle.png"/>
+    </ImageView>
+</AnchorPane>

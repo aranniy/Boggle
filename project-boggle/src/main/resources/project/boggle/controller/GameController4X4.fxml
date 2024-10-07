@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#keyTyped" onKeyTyped="#keyTyped" prefHeight="725.0" prefWidth="600.0" style="-fx-background-color: white;" styleClass="bodybg" stylesheets="@css/fond.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.boggle.controller.GameController4X4">
+    <AnchorPane fx:id="wordsFounded" layoutX="26.0" layoutY="600.0" prefHeight="111.0" prefWidth="552.0">
+        <Label prefHeight="41.0" prefWidth="92.0" />
+        <Label layoutY="69.0" prefHeight="41.0" prefWidth="92.0" />
+        <Label layoutX="92.0" prefHeight="41.0" prefWidth="92.0" />
+        <Label layoutX="92.0" layoutY="69.0" prefHeight="41.0" prefWidth="92.0" />
+        <Label layoutX="174.0" prefHeight="41.0" prefWidth="92.0" />
+        <Label layoutX="184.0" layoutY="69.0" prefHeight="41.0" prefWidth="92.0" />
+        <Label layoutX="276.0" prefHeight="41.0" prefWidth="92.0" />
+        <Label layoutX="276.0" layoutY="69.0" prefHeight="41.0" prefWidth="92.0" />
+        <Label layoutX="358.0" prefHeight="41.0" prefWidth="92.0" />
+        <Label layoutX="368.0" layoutY="69.0" prefHeight="41.0" prefWidth="92.0" />
+        <Label layoutX="460.0" prefHeight="41.0" prefWidth="92.0" />
+        <Label layoutX="460.0" layoutY="69.0" prefHeight="41.0" prefWidth="92.0" />
+    </AnchorPane>
+    <Pane prefHeight="73.0" prefWidth="600.0" style="-fx-background-color: lavenderblush;">
+        <Label layoutX="256.0" layoutY="16.0" prefHeight="41.0" prefWidth="74.0" text="SCORE : " />
+        <Label fx:id="timer" layoutX="480.0" layoutY="16.0" prefHeight="41.0" prefWidth="106.0" text="TIMER:" />
+        <Label layoutX="19.0" layoutY="26.0" text="COINS :" />
+        <Label fx:id="coins" layoutX="74.0" layoutY="26.0" text="3" />
+        <Label fx:id="gainTrophy" alignment="CENTER" layoutX="109.0" layoutY="51.0" prefHeight="17.0" prefWidth="368.0" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Label>
+        <Label fx:id="score" layoutX="309.0" layoutY="16.0" prefHeight="41.0" prefWidth="21.0" text="0" />
+    </Pane>
+    <Label fx:id="wordInMaking" alignment="CENTER" layoutX="58.0" layoutY="85.0" prefHeight="41.0" prefWidth="484.0" textAlignment="CENTER">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Label>
+    <Button cacheShape="false" centerShape="false" focusTraversable="false" layoutX="14.0" layoutY="350.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#cancel" prefHeight="23.0" prefWidth="81.0" scaleShape="false" stylesheets="@css/buttonUserConnection.css" text="cancel">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Button cacheShape="false" centerShape="false" defaultButton="true" layoutX="505.0" layoutY="350.0" mnemonicParsing="false" onAction="#validate" prefHeight="23.0" prefWidth="81.0" scaleShape="false" stylesheets="@css/buttonUserConnection.css" text="validate">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <AnchorPane fx:id="viewBoard" layoutX="110.0" layoutY="175.0" prefHeight="376.0" prefWidth="376.0">
+        <Button focusTraversable="false" layoutX="9.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="E">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="103.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="C">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="197.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="U">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="291.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="U">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="9.0" layoutY="94.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="R">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="103.0" layoutY="94.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="O">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="197.0" layoutY="94.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="S">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="291.0" layoutY="94.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="D">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="9.0" layoutY="188.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="E">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="103.0" layoutY="188.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="U">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="197.0" layoutY="188.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="D">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="291.0" layoutY="188.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="A">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="9.0" layoutY="282.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="I">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="103.0" layoutY="282.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="B">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="197.0" layoutY="282.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="N">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="291.0" layoutY="282.0" mnemonicParsing="false" onAction="#buttonOnAction" prefHeight="94.0" prefWidth="94.0" text="V">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+    </AnchorPane>
+    <Label fx:id="textDisable" alignment="CENTER" layoutX="221.0" layoutY="127.0" opacity="0.0" prefHeight="41.0" prefWidth="159.0" text="Buttons disable" textAlignment="CENTER">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Label>
+    <Button layoutX="343.0" layoutY="561.0" mnemonicParsing="false" onAction="#rotation" prefHeight="26.0" prefWidth="81.0" text="Rotation" />
+    <Button layoutX="115.0" layoutY="561.0" mnemonicParsing="false" onAction="#vision" prefHeight="26.0" prefWidth="74.0" text="Vision" />
+    <Button layoutX="189.0" layoutY="561.0" mnemonicParsing="false" onAction="#inspiration" text="Inspiration" />
+    <Button layoutX="262.0" layoutY="561.0" mnemonicParsing="false" onAction="#addChrono" prefHeight="26.0" prefWidth="81.0" text="AddChrono" />
+    <Button layoutX="424.0" layoutY="561.0" mnemonicParsing="false" onAction="#brasier" prefHeight="26.0" prefWidth="74.0" text="Brasier" />
+    <ImageView fitHeight="66.0" fitWidth="94.0" layoutX="36.0" layoutY="528.0" preserveRatio="true">
+        <Image url="@../../../gif/help.gif" />
+    </ImageView>
+    <Label fx:id="smileyHappy" layoutX="9.0" layoutY="73.0" opacity="0.0" prefHeight="32.0" prefWidth="172.0" text="(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧">
+        <font>
+            <Font size="22.0" />
+        </font>
+    </Label>
+    <Label fx:id="smileySad" layoutX="424.0" layoutY="73.0" opacity="0.0" prefHeight="32.0" prefWidth="172.0" text="(╥﹏╥)">
+        <font>
+            <Font size="22.0" />
+        </font>
+    </Label>
+</AnchorPane>

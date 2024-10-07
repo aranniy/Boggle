@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="600.0" style="-fx-background-color: LAVENDER;" styleClass="bodybg" stylesheets="@css/fond.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.boggle.controller.HomeController">
+    <Button layoutX="231.0" layoutY="251.0" mnemonicParsing="false" onAction="#connection" prefHeight="78.0" prefWidth="149.0" stylesheets="@css/buttonUserConnection.css" text="connection" />
+    <Button layoutX="226.0" layoutY="425.0" mnemonicParsing="false" onAction="#creation" prefHeight="78.0" prefWidth="149.0" stylesheets="@css/buttonUserConnection.css" text="create an account" />
+   <ImageView fitHeight="163.0" fitWidth="315.0" layoutX="148.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../png/boogle.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

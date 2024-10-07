@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="600.0" style="-fx-background-color: LAVENDER;" styleClass="bodybg" stylesheets="@css/fond.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.boggle.controller.TrophyController">
+   <ImageView fitHeight="126.0" fitWidth="211.0" layoutX="-7.0" layoutY="195.0" preserveRatio="true">
+      <Image url="@../../../png/GG.png" />
+   </ImageView>
+   <ImageView fitHeight="99.0" fitWidth="93.0" layoutX="242.0" layoutY="198.0" preserveRatio="true">
+      <Image url="@../../../png/trophy.png" />
+   </ImageView>
+   <ImageView fitHeight="75.0" fitWidth="81.0" layoutX="438.0" layoutY="545.0" preserveRatio="true">
+      <Image url="@../../../png/vert.png" />
+   </ImageView>
+   <ImageView fitHeight="108.0" fitWidth="144.0" layoutX="210.0" layoutY="528.0" preserveRatio="true">
+      <Image url="@../../../png/coeur.png" />
+   </ImageView>
+   <ImageView fitHeight="99.0" fitWidth="93.0" layoutX="234.0" layoutY="363.0" preserveRatio="true">
+      <Image url="@../../../png/kirby.png" />
+   </ImageView>
+   <ImageView fitHeight="126.0" fitWidth="117.0" layoutX="39.0" layoutY="363.0" preserveRatio="true">
+      <Image url="@../../../png/ghost.png" />
+   </ImageView>
+   <ImageView fitHeight="132.0" fitWidth="152.0" layoutX="399.0" layoutY="378.0" preserveRatio="true">
+      <Image url="@../../../png/fail.png" />
+   </ImageView>
+   <ImageView fitHeight="99.0" fitWidth="93.0" layoutX="444.0" layoutY="195.0" preserveRatio="true">
+      <Image url="@../../../png/feu.png" />
+   </ImageView>
+   <ImageView fitHeight="99.0" fitWidth="93.0" layoutX="52.0" layoutY="536.0" preserveRatio="true">
+      <Image url="@../../../png/rouge.png" />
+   </ImageView>
+   <Label fx:id="succes" layoutX="523.0" layoutY="21.0" prefHeight="37.0" prefWidth="22.0" text="0" textAlignment="CENTER">
+      <font>
+         <Font size="30.0" />
+      </font>
+   </Label>
+   <Label layoutX="542.0" layoutY="21.0" prefHeight="30.0" prefWidth="45.0" text="/9" textAlignment="CENTER">
+      <font>
+         <Font size="30.0" />
+      </font>
+   </Label>
+   <Label layoutX="437.0" layoutY="462.0" prefHeight="37.0" prefWidth="110.0" text="score 0 points" textAlignment="CENTER" />
+   <Label layoutX="413.0" layoutY="303.0" prefHeight="37.0" prefWidth="152.0" text="score over 200 points" textAlignment="CENTER" />
+   <Label layoutX="196.0" layoutY="303.0" prefHeight="37.0" prefWidth="201.0" text="find a word longer than 12 letters" textAlignment="CENTER" />
+   <Label layoutX="212.0" layoutY="469.0" prefHeight="37.0" prefWidth="174.0" text="find a word without vowels" textAlignment="CENTER" />
+   <Label layoutX="29.0" layoutY="303.0" prefHeight="37.0" prefWidth="142.0" text="find a word with 2 &quot;g&quot;" textAlignment="CENTER" />
+   <Label layoutX="87.0" layoutY="469.0" prefHeight="37.0" prefWidth="45.0" text="???" textAlignment="CENTER" />
+   <Label layoutX="61.0" layoutY="636.0" prefHeight="37.0" prefWidth="117.0" text="play 10 times" textAlignment="CENTER" />
+   <Label layoutX="240.0" layoutY="636.0" prefHeight="37.0" prefWidth="117.0" text="play 100 times" textAlignment="CENTER" />
+   <Label layoutX="432.0" layoutY="636.0" prefHeight="37.0" prefWidth="131.0" text="play 1000 times" textAlignment="CENTER" />
+   <Button fx:id="retour" layoutX="252.0" layoutY="685.0" mnemonicParsing="false" onAction="#retour" prefHeight="26.0" prefWidth="73.0" stylesheets="@css/buttonUserConnection.css" text="Back" />
+   <Label layoutX="152.0" layoutY="195.0" prefHeight="26.0" prefWidth="14.0" text="/1" textAlignment="CENTER" />
+   <Label layoutX="364.0" layoutY="195.0" prefHeight="26.0" prefWidth="14.0" text="/1" textAlignment="CENTER" />
+   <Label layoutX="558.0" layoutY="195.0" prefHeight="26.0" prefWidth="14.0" text="/1" textAlignment="CENTER" />
+   <Label layoutX="152.0" layoutY="350.0" prefHeight="26.0" prefWidth="14.0" text="/1" textAlignment="CENTER" />
+   <Label layoutX="364.0" layoutY="350.0" prefHeight="26.0" prefWidth="14.0" text="/1" textAlignment="CENTER" />
+   <Label layoutX="558.0" layoutY="350.0" prefHeight="26.0" prefWidth="14.0" text="/1" textAlignment="CENTER" />
+   <Label layoutX="149.0" layoutY="523.0" prefHeight="26.0" prefWidth="14.0" text="/1" textAlignment="CENTER" />
+   <Label layoutX="364.0" layoutY="523.0" prefHeight="26.0" prefWidth="14.0" text="/1" textAlignment="CENTER" />
+   <Label layoutX="558.0" layoutY="523.0" prefHeight="26.0" prefWidth="14.0" text="/1" textAlignment="CENTER" />
+   <Label fx:id="un" layoutX="145.0" layoutY="195.0" prefHeight="26.0" prefWidth="14.0" text="0" textAlignment="CENTER" />
+   <Label fx:id="deux" layoutX="357.0" layoutY="195.0" prefHeight="26.0" prefWidth="14.0" text="0" textAlignment="CENTER" />
+   <Label fx:id="trois" layoutX="551.0" layoutY="195.0" prefHeight="26.0" prefWidth="14.0" text="0" textAlignment="CENTER" />
+   <Label fx:id="quatre" layoutX="145.0" layoutY="350.0" prefHeight="26.0" prefWidth="14.0" text="0" textAlignment="CENTER" />
+   <Label fx:id="cinq" layoutX="357.0" layoutY="350.0" prefHeight="26.0" prefWidth="14.0" text="0" textAlignment="CENTER" />
+   <Label fx:id="six" layoutX="551.0" layoutY="350.0" prefHeight="26.0" prefWidth="14.0" text="0" textAlignment="CENTER" />
+   <Label fx:id="sept" layoutX="142.0" layoutY="523.0" prefHeight="26.0" prefWidth="14.0" text="0" textAlignment="CENTER" />
+   <Label fx:id="huit" layoutX="357.0" layoutY="523.0" prefHeight="26.0" prefWidth="14.0" text="0" textAlignment="CENTER" />
+   <Label fx:id="neuf" layoutX="551.0" layoutY="523.0" prefHeight="26.0" prefWidth="14.0" text="0" textAlignment="CENTER" />
+   <ImageView fx:id="completed" fitHeight="93.0" fitWidth="152.0" layoutX="12.0" layoutY="20.0" opacity="0.0" preserveRatio="true">
+      <Image url="@../../../png/completed.png" />
+   </ImageView>
+   <ImageView fitHeight="134.0" fitWidth="367.0" layoutX="117.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../png/trophees.png" />
+      </image>
+   </ImageView>
+</AnchorPane>
